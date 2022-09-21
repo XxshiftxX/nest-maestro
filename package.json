@@ -1,0 +1,33 @@
+{
+  "name": "nest-maestro",
+  "version": "0.1.0",
+  "description": "Saga orchestrator for nestjs",
+  "main": "dist/index.js",
+  "typings": "definitions/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ava",
+    "lint": "eslint 'src/**/*.ts' --fix"
+  },
+  "author": "xxshiftxx",
+  "license": "MIT",
+  "devDependencies": {
+    "@nestjs/common": "^9.1.1",
+    "@nestjs/core": "^9.1.1",
+    "@nestjs/cqrs": "^9.0.1",
+    "@types/node": "^18.7.18",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "ava": "^4.3.3",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
