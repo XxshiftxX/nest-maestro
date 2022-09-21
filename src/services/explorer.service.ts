@@ -3,7 +3,7 @@ import { InstanceWrapper } from '@nestjs/core/injector/instance-wrapper';
 import { Module } from '@nestjs/core/injector/module';
 import { ModulesContainer } from '@nestjs/core/injector/modules-container';
 import { SAGA_STEP_HANDLER_METADATA } from '../decorators/constants';
-import { SagaOrchestrator } from '../interfaces/saga-step-handler.interface';
+import { SagaStepHandler } from '../interfaces/saga-step-handler.interface';
 
 @Injectable()
 export class ExplorerService {
@@ -11,7 +11,7 @@ export class ExplorerService {
 
   explore() {
     const modules = [...this.modulesContainer.values()];
-    const steps = this.flatMap<SagaOrchestrator>(modules, (instance) => (
+    const steps = this.flatMap<SagaStepHandler>(modules, (instance) => (
       this.filterProvider(instance, SAGA_STEP_HANDLER_METADATA)
     ));
 
