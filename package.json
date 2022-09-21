@@ -1,9 +1,9 @@
 {
   "name": "nest-maestro",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Saga orchestrator for nestjs",
   "main": "dist/index.js",
-  "typings": "definitions/index.d.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "ava",
