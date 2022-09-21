@@ -1,1 +1,1 @@
-export interface SagaStep {}
+export interface ISagaStep {}
